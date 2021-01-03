@@ -31,8 +31,8 @@ VARIABLE DESCRIPTIONS:
 4  Length1     Length from the nose to the beginning of the tail (in cm)
 5  Length2     Length from the nose to the notch of the tail (in cm)
 6  Length3     Length from the nose to the end of the tail (in cm)
-7  Height%     Maximal height as % of Length3
-8  Width%      Maximal width as % of Length3
+7  Height%     Maximal height as % of Length3 (Height =  Height/Length3 * 100)
+8  Width%      Maximal width as % of Length3 (Width  =  Width/Length3 * 100)
 9  Sex         1 = male 0 = female
 
 

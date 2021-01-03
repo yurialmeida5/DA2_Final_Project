@@ -1,3 +1,18 @@
+#######################
+## Analysis of       ##
+##  Fish Weight      ##
+##   based on        ##
+##  Length, Specie   ##
+##      and          ##
+##    Width          ##
+##                   ##
+##      NO.1         ##
+##                   ##
+##   Data Cleaning   ##
+##                   ##
+#######################
+
+
 # Load necessary packages
 library(tidyverse)
 
@@ -7,8 +22,11 @@ rm(list=ls())
 # Define columns names
 col_name <- c("Obs", "Species", "Weight", "Length1", "Length2"	, "Length3",	"Height", "Width", "Sex")
 
+# Get Raw Data Path
+raw_data_path <- 'https://raw.githubusercontent.com/yurialmeida5/DA2_Final_Project/master/data/raw/fish_data_raw.txt'
+
 # Import fish dataset
-fish_data <- read.table('data/raw/fish_data_raw.txt', header = FALSE , col.names = col_name)
+fish_data <- read.table( raw_data_path , header = FALSE , col.names = col_name)
 
 # Note that there are two values that can't be used on our dependent variable weight (rows 14 and 47). 
 # One the value corresponds to 0 (It doesn't make any sense to have any fish size equals to 0). 
